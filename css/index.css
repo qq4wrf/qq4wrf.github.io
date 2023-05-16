@@ -1,0 +1,922 @@
+/* #region 清除默认边距 */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* #endregion */
+
+/* #region 网页背景*/
+body{
+    background-color: #3b3b3b;
+}
+/* #endregion */
+
+/* #region 语言条部分 */
+
+/* 语言部分样式 */
+.language{
+    width: 100%;
+    height: 36px;
+    background-color: #1E1E1E;
+}
+
+/* 语言下的li标签 */
+
+.language>ul{
+    float: right;
+    margin-right: 10px;
+}
+
+.language>ul>li{
+    width: 30px;
+    height: 30px;
+    /* background-color: aquamarine; */
+    float: right;
+    margin-right: 25px;
+    list-style:none;
+    margin-top: 3px;
+}
+
+/* .language>ul>li:nth-of-type(1){
+    background: url(../images/tradition_chinese.png);
+} */
+
+.language>ul>li:nth-of-type(1):hover{
+    background: url(../images/tradition_chinese_hover.png);
+}
+
+/* .language>ul>li:nth-of-type(2){
+    background: url(../images/simplified_chinese.png);
+} */
+
+.language>ul>li:nth-of-type(2):hover{
+    background: url(../images/simplified_chinese_hover.png);
+}
+/* #endregion */
+
+/* #region 导航条 */
+/* 导航条样式 */
+.nav{
+    width: 100%;
+    height: 75px;
+    background-color:#F5C518;
+}
+
+/* 清楚a标签默认样式 */
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* 导航条部分 */
+
+.nav>ulp{
+    margin-left: 1000px;
+    
+}
+
+.nav>ulp>li{
+    width: 36px;
+    height: 75px;
+    float: left;
+    list-style: none;
+    margin-left: 40px;
+    margin-top: 0px;
+
+}
+
+.nav>ulp>li:nth-of-type(1){
+    background: url(../images/first1.png);
+}
+
+.nav>ulp>li:nth-of-type(2){
+    background: url(../images/first2.png);
+}
+
+.nav>ulp li:nth-child(2){
+    transform: translate(-20px);
+}
+
+.nav>ul{
+    margin-left: 500px;
+}
+
+.nav>ul>li{
+    height: 75px;
+    padding: 0 50px;
+    float: left;
+    list-style: none;
+}
+
+.nav>ul>li>a{
+    color: #000000;
+    line-height: 35px;
+    font-size: 45px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.nav>ul li:nth-child(1){
+    transform: translate(-260px);
+}
+
+.nav>ul>li>a:nth-of-type(1):hover{
+    color:#FFFFF9;
+}
+
+.nav>ul li:nth-child(2){
+    transform: translate(-145px);
+}
+
+.nav>ul>li>a:nth-of-type(2):hover{
+    color:#FFFFF9;
+}
+
+.nav>ul li:nth-child(3){
+    transform: translate(-30px);
+}
+
+.nav>ul>li>a:nth-of-type(3):hover{
+    color:#FFFFF9;
+}
+
+/* #endregion */
+
+/* #region 轮播图*/
+.banner{
+    width: 100%;
+    height: 100%;
+    background-color: #3b3b3b;
+}
+
+.slide{
+    position: relative;
+    width: 1120px;
+    height: 450px;
+    margin: 0 auto;
+    /* background-color: pink; */
+    margin-top: 20px;
+}
+
+/* 轮播图两侧按钮 */
+.prev,.next{
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    width: 25px;
+    height: 45px;
+    line-height: 45px;
+    background-color: rgba(5, 5, 5, 0.6);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.prev{
+    left: 0;
+    border-radius: 0 28px 28px 0;
+}
+
+.next{
+    right: 0;
+    border-radius: 28px 0 0 28px;
+}
+
+.banner_btn{
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+    width: 113px;
+    height: 15px;
+}
+
+.banner_btn li{
+    list-style: none;
+    float: left;
+    width: 8px;
+    height: 8px;
+    border: 1px solid rgba(0,0,0,.05);
+    margin-right: 4px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,.4);  
+}
+
+.banner_btn .active{
+    position: relative;
+    top: -2px;
+    width: 8px;
+    height: 8px;
+    border: 3px solid rgba(0,0,0,.1);
+    background-color: rgba(225,225,225,1);
+}
+/* #endregion */
+
+/* #region 版心部分 */
+
+/* #region 近期电影票房*/
+.continer{
+    width: 90%;
+    /* height: 1500px; */
+    height: 1835px;
+    /* background-color: pink; */
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 15px;  
+}
+/* #endregion */
+
+/* #region 电影综合票房 */
+.continer>.case_a{
+    width: 100%;
+    height: 110px;
+    background-color: #454454;
+    border-radius: 15px 15px 0 0;
+}
+
+.continer>.case_a>ul{
+    line-height: 110px;
+    margin-left: 40px;
+    /* padding: 40px 40px; */
+    list-style: none;
+    color: #FFFFF9;
+    font-size: 30px;
+}
+/* #endregion */
+
+/* #region 影片 综合票房 票房占比 排片次数*/
+.continer>.case_b{
+    width: 100%;
+    height: 50px;
+    background-color: #383743;
+}
+
+.continer>.case_b>ul>li{
+    list-style: none;
+    float: left;
+    line-height: 50px;
+    padding: 0px 170px 0px 30px;  /*上 右 下 左*/ 
+    color: #999999;
+    font-size: 20px;
+}
+/* #endregion */
+
+/* #region 0 银河护卫队3 */
+.continer>.case0{
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+    background-color: #454454;
+}
+
+.continer>.case0>ul>li{
+    list-style: none;
+    float: left;
+    line-height: 120px;
+    padding: 0px 120px 0px 30px;
+    font-size: 30px;
+    box-sizing: border-box;
+}
+
+.continer>.case0>ul li:nth-child(1){
+    color: #FFFFFF;
+    transform: translate(-5px);
+}
+
+.continer>.case0>ul li:nth-child(2){
+    color: #FF9400;
+    transform: translate(-90px);
+}
+
+.continer>.case0>ul li:nth-child(3){
+    color: #FFFFFF;
+    transform: translate(-115px);
+}
+
+.continer>.case0>ul li:nth-child(4){
+    color: #FFFFFF;
+    transform: translate(-75px);
+}
+
+.continer>.case0>ul li:nth-child(5){
+    color: #FFFFFF;
+    transform: translate(-55px);
+}
+/* #endregion */
+
+/* #region 1 人生路不熟*/
+.continer>.case1{
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+    background-color: #383743;
+}
+
+.continer>.case1>ul>li{
+    list-style: none;
+    float: left;
+    line-height: 120px;
+    padding: 0px 120px 0px 30px;
+    font-size: 30px;
+    box-sizing: border-box;
+}
+
+.continer>.case1>ul li:nth-child(1){
+    color: #FFFFFF;
+    transform: translate(-5px);
+}
+
+.continer>.case1>ul li:nth-child(2){
+    color: #FF9400;
+    transform: translate(-75px);
+}
+
+.continer>.case1>ul li:nth-child(3){
+    color: #FFFFFF;
+    transform: translate(-100px);
+}
+
+.continer>.case1>ul li:nth-child(4){
+    color: #FFFFFF;
+    transform: translate(-60px);
+}
+
+.continer>.case1>ul li:nth-child(5){
+    color: #FFFFFF;
+    transform: translate(-40px);
+}
+/* #endregion */
+
+/* #region 2 长空之王*/
+.continer>.case2{
+    width: 100%;
+    height: 120px;
+    background-color: #454454;
+}
+
+.continer>.case2>ul>li{
+    list-style: none;
+    float: left;
+    line-height: 120px;
+    padding: 0px 120px 0px 30px;
+    font-size: 30px;
+}
+
+.continer>.case2>ul li:nth-child(1){
+    color: #FFFFFF;
+    transform: translate(-5px);
+}
+
+.continer>.case2>ul li:nth-child(2){
+    color: #FF9400;
+    transform: translate(-45px);
+}
+
+.continer>.case2>ul li:nth-child(3){
+    color: #FFFFFF;
+    transform: translate(-40px);
+}
+
+.continer>.case2>ul li:nth-child(4){
+    color: #FFFFFF;
+    transform: translate();
+}
+
+.continer>.case2>ul li:nth-child(5){
+    color: #FFFFFF;
+    transform: translate(20px);
+}
+/* #endregion */
+
+/* #region 3 这么多年*/
+.continer>.case3{
+    width: 100%;
+    height: 120px;
+    background-color: #383743;
+}
+
+.continer>.case3>ul>li{
+    list-style: none;
+    float: left;
+    line-height: 120px;
+    padding: 0px 120px 0px 30px;
+    font-size: 30px;
+}
+
+.continer>.case3>ul li:nth-child(1){
+    color: #FFFFFF;
+    transform: translate(-5px);
+}
+
+.continer>.case3>ul li:nth-child(2){
+    color: #FF9400;
+    transform: translate(-45px);
+}
+
+.continer>.case3>ul li:nth-child(3){
+    color: #FFFFFF;
+    transform: translate(-55px);
+}
+
+.continer>.case3>ul li:nth-child(4){
+    color: #FFFFFF;
+    transform: translate(-10px);
+}
+
+.continer>.case3>ul li:nth-child(5){
+    color: #FFFFFF;
+    transform: translate(20px);
+}
+/* #endregion */
+
+/* #region 4 灌篮高手*/
+.continer>.case4{
+    width: 100%;
+    height: 120px;
+    background-color: #454454;
+}
+
+.continer>.case4>ul>li{
+    list-style: none;
+    float: left;
+    line-height: 120px;
+    padding: 0px 120px 0px 30px;
+    font-size: 30px;
+}
+
+.continer>.case4>ul li:nth-child(1){
+    color: #FFFFFF;
+    transform: translate(-5px);
+}
+
+.continer>.case4>ul li:nth-child(2){
+    color: #FF9400;
+    transform: translate(-45px);
+}
+
+.continer>.case4>ul li:nth-child(3){
+    color: #FFFFFF;
+    transform: translate(-50px);
+}
+
+.continer>.case4>ul li:nth-child(4){
+    color: #FFFFFF;
+    transform: translate(5px);
+}
+
+.continer>.case4>ul li:nth-child(5){
+    color: #FFFFFF;
+    transform: translate(20px);
+}
+/* #endregion */
+
+/* #region 5 铃芽户缔*/
+.continer>.case5{
+    width: 100%;
+    height: 120px;
+    background-color: #383743;
+}
+
+.continer>.case5>ul>li{
+    list-style: none;
+    float: left;
+    line-height: 120px;
+    padding: 0px 120px 0px 30px;
+    font-size: 30px;
+}
+
+.continer>.case5>ul li:nth-child(1){
+    color: #FFFFFF;
+    transform: translate(-5px);
+}
+
+.continer>.case5>ul li:nth-child(2){
+    color: #FF9400;
+    transform: translate(-45px);
+}
+
+.continer>.case5>ul li:nth-child(3){
+    color: #FFFFFF;
+    transform: translate(-35px);
+}
+
+.continer>.case5>ul li:nth-child(4){
+    color: #FFFFFF;
+    transform: translate(20px);
+}
+
+.continer>.case5>ul li:nth-child(5){
+    color: #FFFFFF;
+    transform: translate(50px);
+}
+/* #endregion */
+
+/* #region 6 宇宙探索编辑部*/
+.continer>.case6{
+    width: 100%;
+    height: 120px;
+    background-color: #454454;
+}
+
+.continer>.case6>ul>li{
+    list-style: none;
+    float: left;
+    line-height: 120px;
+    padding: 0px 120px 0px 30px;
+    font-size: 30px;
+}
+
+.continer>.case6>ul li:nth-child(1){
+    color: #FFFFFF;
+    transform: translate(-10px);
+}
+
+.continer>.case6>ul li:nth-child(2){
+    color: #FF9400;
+    transform: translate(-125px);
+}
+
+.continer>.case6>ul li:nth-child(3){
+    color: #FFFFFF;
+    transform: translate(-110px);
+}
+
+.continer>.case6>ul li:nth-child(4){
+    color: #FFFFFF;
+    transform: translate(-50px);
+}
+
+.continer>.case6>ul li:nth-child(5){
+    color: #FFFFFF;
+    transform: translate(-10px);
+}
+/* #endregion */
+
+/* #region 7 泰坦尼克号*/
+.continer>.case7{
+    width: 100%;
+    height: 120px;
+    
+    background-color: #383743;
+}
+
+.continer>.case7>ul>li{
+    list-style: none;
+    float: left;
+    line-height: 120px;
+    padding: 0px 120px 0px 30px;
+    font-size: 30px;
+}
+
+.continer>.case7>ul li:nth-child(1){
+    color: #FFFFFF;
+    transform: translate(-5px);
+}
+
+.continer>.case7>ul li:nth-child(2){
+    color: #FF9400;
+    transform: translate(-75px);
+}
+
+.continer>.case7>ul li:nth-child(3){
+    color: #FFFFFF;
+    transform: translate(-45px);
+}
+
+.continer>.case7>ul li:nth-child(4){
+    color: #FFFFFF;
+    transform: translate(20px);
+}
+
+.continer>.case7>ul li:nth-child(5){
+    color: #FFFFFF;
+    transform: translate(70px);
+}
+/* #endregion */
+
+/* #region 8 忠犬八公*/
+.continer>.case8{
+    width: 100%;
+    height: 120px;
+    background-color: #454454;
+}
+
+.continer>.case8>ul>li{
+    list-style: none;
+    float: left;
+    line-height: 120px;
+    padding: 0px 120px 0px 30px;
+    font-size: 30px;
+}
+
+.continer>.case8>ul li:nth-child(1){
+    color: #FFFFFF;
+    transform: translate(-5px);
+}
+
+.continer>.case8>ul li:nth-child(2){
+    color: #FF9400;
+    transform: translate(-45px);
+}
+
+.continer>.case8>ul li:nth-child(3){
+    color: #FFFFFF;
+    transform: translate(-15px);
+}
+
+.continer>.case8>ul li:nth-child(4){
+    color: #FFFFFF;
+    transform: translate(40px);
+}
+
+.continer>.case8>ul li:nth-child(5){
+    color: #FFFFFF;
+    transform: translate(100px);
+}
+/* #endregion */
+
+/* #region 9 检查风云*/
+.continer>.case9{
+    width: 100%;
+    height: 120px;
+    background-color: #383743;
+}
+
+.continer>.case9>ul>li{
+    list-style: none;
+    float: left;
+    line-height: 120px;
+    padding: 0px 120px 0px 30px;
+    font-size: 30px;
+}
+
+.continer>.case9>ul li:nth-child(1){
+    color: #FFFFFF;
+    transform: translate(-5px);
+}
+
+.continer>.case9>ul li:nth-child(2){
+    color: #FF9400;
+    transform: translate(-45px);
+}
+
+.continer>.case9>ul li:nth-child(3){
+    color: #FFFFFF;
+    transform: translate(-35px);
+}
+
+.continer>.case9>ul li:nth-child(4){
+    color: #FFFFFF;
+    transform: translate(25px);
+}
+
+.continer>.case9>ul li:nth-child(5){
+    color: #FFFFFF;
+    transform: translate(60px);
+}
+/* #endregion */
+
+/* #region 10 惊天救援*/
+.continer>.case10{
+    width: 100%;
+    height: 120px;
+    background-color: #454454;
+}
+
+.continer>.case10>ul>li{
+    list-style: none;
+    float: left;
+    line-height: 120px;
+    padding: 0px 120px 0px 30px;
+    font-size: 30px;
+}
+
+.continer>.case10>ul li:nth-child(1){
+    color: #FFFFFF;
+    transform: translate(-5px);
+}
+
+.continer>.case10>ul li:nth-child(2){
+    color: #FF9400;
+    transform: translate(-45px);
+}
+
+.continer>.case10>ul li:nth-child(3){
+    color: #FFFFFF;
+    transform: translate(-30px);
+}
+
+.continer>.case10>ul li:nth-child(4){
+    color: #FFFFFF;
+    transform: translate(30px);
+}
+
+.continer>.case10>ul li:nth-child(5){
+    color: #FFFFFF;
+    transform: translate(60px);
+}
+/* #endregion */
+
+/* #region 11 长沙夜生活*/
+.continer>.case11{
+    width: 100%;
+    height: 120px;
+    background-color: #383743;
+}
+
+.continer>.case11>ul>li{
+    list-style: none;
+    float: left;
+    line-height: 120px;
+    padding: 0px 120px 0px 30px;
+    font-size: 30px;
+}
+
+.continer>.case11>ul li:nth-child(1){
+    color: #FFFFFF;
+    transform: translate(-5px);
+}
+
+.continer>.case11>ul li:nth-child(2){
+    color: #FF9400;
+    transform: translate(-65px);
+}
+
+.continer>.case11>ul li:nth-child(3){
+    color: #FFFFFF;
+    transform: translate(-40px);
+}
+
+.continer>.case11>ul li:nth-child(4){
+    color: #FFFFFF;
+    transform: translate(25px);
+}
+
+.continer>.case11>ul li:nth-child(5){
+    color: #FFFFFF;
+    transform: translate(65px);
+}
+/* #endregion */
+
+/* #region 12 龙马精神*/
+.continer>.case12{
+    width: 100%;
+    height: 120px;
+    background-color: #454454;
+}
+
+.continer>.case12>ul>li{
+    list-style: none;
+    float: left;
+    line-height: 120px;
+    padding: 0px 120px 0px 30px;
+    font-size: 30px;
+}
+
+.continer>.case12>ul li:nth-child(1){
+    color: #FFFFFF;
+    transform: translate(-5px);
+}
+
+.continer>.case12>ul li:nth-child(2){
+    color: #FF9400;
+    transform: translate(-25px);
+}
+
+.continer>.case12>ul li:nth-child(3){
+    color: #FFFFFF;
+    transform: translate(-20px);
+}
+
+.continer>.case12>ul li:nth-child(4){
+    color: #FFFFFF;
+    transform: translate(50px);
+}
+
+.continer>.case12>ul li:nth-child(5){
+    color: #FFFFFF;
+    transform: translate(120px);
+}
+/* #endregion */
+
+/* #region 13 保你平安*/
+.continer>.case13{
+    width: 100%;
+    height: 120px;
+    background-color: #383743;
+}
+
+.continer>.case13>ul>li{
+    list-style: none;
+    float: left;
+    line-height: 120px;
+    padding: 0px 120px 0px 30px;
+    font-size: 30px;
+}
+
+.continer>.case13>ul li:nth-child(1){
+    color: #FFFFFF;
+    transform: translate(-5px);
+}
+
+.continer>.case13>ul li:nth-child(2){
+    color: #FF9400;
+    transform: translate(-25px);
+}
+
+.continer>.case13>ul li:nth-child(3){
+    color: #FFFFFF;
+    transform: translate(-20px);
+}
+
+.continer>.case13>ul li:nth-child(4){
+    color: #FFFFFF;
+    transform: translate(50px);
+}
+
+.continer>.case13>ul li:nth-child(5){
+    color: #FFFFFF;
+    transform: translate(120px);
+}
+/* #endregion */
+
+/* #region 14 毒蛇律师*/
+.continer>.case14{
+    width: 100%;
+    height: 120px;
+    background-color: #454454;
+    border-radius: 0 0 15px 15px;
+}
+
+.continer>.case14>ul>li{
+    list-style: none;
+    float: left;
+    padding: 35px 120px 30px 30px;
+    font-size: 30px;
+}
+
+.continer>.case14>ul li:nth-child(1){
+    color: #FFFFFF;
+    transform: translate(-5px);
+}
+
+.continer>.case14>ul li:nth-child(2){
+    color: #FF9400;
+    transform: translate(-25px);
+}
+
+.continer>.case14>ul li:nth-child(3){
+    color: #FFFFFF;
+    transform: translate(-20px);
+}
+
+.continer>.case14>ul li:nth-child(4){
+    color: #FFFFFF;
+    transform: translate(50px);
+}
+
+.continer>.case14>ul li:nth-child(5){
+    color: #FFFFFF;
+    transform: translate(120px);
+}
+/* #endregion */
+
+/* #endregion  */
+
+/* #region 底部 */
+.bottom{
+    margin-top: 120px;
+    width: 100%;
+    height: 300px;
+    background-color: #3B3B3B;
+}
+
+.bottom>ul{
+    margin-right: 100px;
+}
+
+.bottom>ul li:nth-child(1){
+    height: 200px;
+    width: 96px;
+    float: left;
+    list-style: none;
+    margin-top: 60px;
+    transform: translate(1170px);
+}
+
+.bottom>ul li:nth-child(2){
+    height: 200px;
+    width: 95px;
+    float: left;
+    list-style: none;
+    margin-top: 60px;
+    transform: translate(1200px);
+}
+
+.bottom>ul>li:nth-of-type(1){
+    background: url(../images/bottomfirst_1.png);
+}
+
+.bottom>ul>li:nth-of-type(2){
+    background: url(../images/bottomfirst_2.png);
+}
+/* #endregion */
