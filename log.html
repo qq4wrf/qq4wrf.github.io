@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" href="css/log.css">
+		<script src="js/Bmob-2.4.14.min.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<script>
+			Bmob.initialize("7aa8e2b65f63a7ac", "321789");
+			Bmob.debug(true);
+
+			function login() {
+				Bmob.User.login(document.getElementById("username").value, document.getElementById("pwd").value).then(res => {
+					location.href = "login.html";
+				}).catch(err => {
+					alert(err.error);
+				});
+			}
+		</script>
+		<!-- 头部部分 一个大div装两个小div -->
+		<div class="header">
+			<!-- 放语言 -->
+			<div class="language">
+				<ulp>
+					<!-- 登录 注册 -->
+					<li>
+						<a href="log.html">log in</a>
+					</li>
+					<li>
+						<a href="register.html">set up</a>
+					</li>
+				</ulp>
+				<ul>
+					<li>
+						<a href="./index_tradition.html"><img src="./images/tradition_chinese.png"></a>
+					</li>
+					<li>
+						<a href="./index.html"><img src="./images/simplified_chinese.png"></a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- 导航条 -->
+			<div class="nav">
+				<ulp>
+					<li></li>
+					<li></li>
+				</ulp>
+
+				<ul>
+					<li>
+						<a href="./index.html">Box Office</a>
+					</li>
+					<li>
+						<a href="./box.html">Top 10</a>
+					</li>
+					<li>
+						<a href="./waiting.html">Release Calendar</a>
+					</li>
+				</ul>
+
+
+			</div>
+
+		</div>
+
+		<!-- 登录版心 -->
+		<div class="log">
+			<div class="top">
+				<ul>
+					<li>账户密码登录</li>
+				</ul>
+			</div>
+
+			<!--用户名-->
+			<div class="userName">
+				<span> 用户名</span>
+				<input type="text" id="username">
+			</div>
+
+			<!-- 密码-->
+			<div class="password">
+				<span>密码</span>
+				<input type="password" id="pwd">
+			</div>
+
+			<!-- 登录按钮-->
+			<div class="logbtn">
+				<!-- <a href="login.html"> -->
+				<input type="button" value="登录" onclick="login()">
+				<!-- </a> -->
+			</div>
+
+			<!-- 注册按钮 -->
+			<div class="regbtn">
+				<a href="./register.html">
+					<input type="button" value="注册" onclick="login()">
+				</a>
+			</div>
+
+		</div>
+
+		<!--底部-->
+		<div class="bottom">
+			<ul>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+
+	</body>
+</html>

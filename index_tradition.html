@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/Bmob-2.2.4.min.js"></script>
+	<title>web</title>
+    <script src="js/Bmob-2.4.14.min.js"></script>
+	<script>
+		Bmob.initialize("7aa8e2b65f63a7ac", "321789");
+		Bmob.debug(true);
+
+		function getLoginInfo() {
+			let user = Bmob.User.current();
+			var buttonTag = document.getElementById("info");
+			buttonTag.innerHTML = user.username;
+		}
+	</script> 
+	<!--引入css样式-->
+	<link rel = "stylesheet"href = "./css/index.css" >
+</head>
+
+<body >
+    <div class="header">
+		<!-- 语言条 -->
+		<div class="language">
+			<ulp>
+				<!-- 登录 注册 -->
+				<li>
+					<a href="log.html">log in</a>
+				</li>
+				<li>
+					<a href="register.html">set up</a>
+				</li>
+			</ulp>
+                <!-- 登录信息显示 -->
+              <ull>
+                 <li id = "info" > 
+                    <button onclick = "getLoginInfo()"  class="btn">
+                        click 
+                       </button>
+                </li>
+             </ull>
+
+            <!-- 语言图标 -->
+            <ul>
+                   <li>
+                     <a href="./waiting_tradition.html"><img src="./images/tradition_chinese.png" ></a>
+                 </li>
+                 <li>
+                     <a href="./waiting.html"><img src="./images/simplified_chinese.png" ></a>
+                 </li>
+            </ul>
+        </div>
+
+        <!-- 导航条 -->
+        <div class="nav">
+            <ulp>
+                <li></li>
+                <li></li>
+            </ulp>
+            
+            <ul>
+                <li>
+                    <a href="./index.html">Box Office</a>
+                </li>
+                <li>
+                    <a href="./box.html">Top 10</a>
+                </li>
+                <li>
+                    <a href="./waiting.html">Release Calendar</a>
+                </li>
+            </ul>
+        </div>
+            
+    </div>
+     
+    
+    <!--轮播图 -->
+    <div class="banner">
+        <div class="slide">
+            <a href="javascript:;">
+                <img class="img" src="./images/1.png" alt="">
+            </a>
+            <a href="javascript:; " class="prev"></a>
+            <a href="javascript:;" class="next"></a>
+            <ul class="banner_btn">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- 版心 近期电影票房 -->
+    <div class="continer">
+        <div class="case_a">
+            <ul>
+                <li>電影綜合票房</li>
+            </ul>
+        </div>
+        <div class="case_b">
+            <ul>
+                <li>影片</li>
+                <li>綜合票房</li>
+                <li>票房占比</li>
+                <li>排片次數</li>
+                <li>總票房</li>
+            </ul>
+        </div>
+
+        <div class="case0">
+            <ul>
+                <li>银河守护队3</li>
+                <li>12628.71萬</li>
+                <li>36.8%</li>
+                <li>107379</li>
+                <li>4.19億</li>    
+            </ul>    
+        </div>
+
+        <div class="case1">
+            <ul>
+                <li>人生路不熟</li>
+                <li>12628.71萬</li>
+                <li>36.8%</li>
+                <li>107379</li>
+                <li>8.46億</li>    
+            </ul>    
+        </div>
+
+        <div class="case2">
+            <ul>
+                <li>長空之王</li>
+                <li>10189.25萬</li>
+                <li>29.8%</li>
+                <li>101045</li>
+                <li>7.43億</li>
+            </ul>
+        </div>
+
+        <div class="case3">
+            <ul>
+                <li>這麽多年</li>
+                <li>3702.82萬</li>
+                <li>10.7%</li>
+                <li>62633</li>
+                <li>2.84億</li>
+            </ul>
+        </div>
+
+        <div class="case4">
+            <ul>
+                <li>灌籃高手</li>
+                <li>9753.49萬</li>
+                <li>9.7%</li>
+                <li>198631</li>
+                <li>6.37億</li>
+            </ul>
+        </div
+        >
+        <div class="case5">
+            <ul>
+                <li>鈴芽戶締</li>
+                <li>762.65萬</li>
+                <li>2.2%</li>
+                <li>12077</li>
+                <li>8.03億</li>
+            </ul>
+        </div>
+        <div class="case6">
+            <ul>
+                <li>宇宙探索編輯部</li>
+                <li>50.78萬</li>
+                <li>1.1%</li>
+                <li>1557</li>
+                <li>6652.9萬</li>
+            </ul>
+        </div>
+        <div class="case7">
+            <ul>
+                <li>铁达尼号</li>
+                <li>55.14萬</li>
+                <li>0.1%</li>
+                <li>731</li>
+                <li>13.65億</li>
+            </ul>
+        </div>
+        <div class="case8">
+            <ul>
+                <li>忠犬八公</li>
+                <li>77.79萬</li>
+                <li>0.2%</li>
+                <li>1575</li>
+                <li>2.86億</li>
+            </ul>
+        </div>
+        <div class="case9">
+            <ul>
+                <li>檢查風雲</li>
+                <li>188.71萬</li>
+                <li>1.5%</li>
+                <li>17603</li>
+                <li>5958.8萬</li>
+            </ul>
+        </div>
+        <div class="case10">
+            <ul>
+                <li>驚天救援</li>
+                <li>122.30萬</li>
+                <li>1.0%</li>
+                <li>11581</li>
+                <li>4130.2萬</li>
+            </ul>
+        </div>
+        <div class="case11">
+            <ul>
+                <li>長沙夜生活</li>
+                <li>88.04萬</li>
+                <li>0.7%</li>
+                <li>6989</li>
+                <li>1698.9萬</li>
+            </ul>
+        </div>
+        <div class="case12">
+            <ul>
+                <li>龍馬精神</li>
+                <li>7.24萬</li>
+                <li> ＜0.1%</li>
+                <li>635</li>
+                <li>2.10億</li>
+            </ul>
+        </div>
+        <div class="case13">
+            <ul>
+                <li>保你平安</li>
+                <li>7.17萬</li>
+                <li>＜0.1%</li>
+                <li>951</li>
+                <li>7.00億</li>
+            </ul>
+        </div>
+        <div class="case14">
+            <ul>
+                <li>毒舌大状</li>
+                <li>1.53萬</li>
+                <li>＜0.1%</li>
+                <li>119</li>
+                <li>1.87億</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--底部-->
+    <div class="bottom"> 
+        <ul>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    
+    <!--引入js>-->
+    <script src="./js/index.js"></script>
+</body>
+</html>

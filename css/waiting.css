@@ -1,0 +1,1161 @@
+/* #region 清除默认边距 */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* #endregion */
+
+/* #region 网页背景*/
+body{
+    background-color: #3b3b3b;
+}
+/* #endregion */
+
+
+/* #region 语言条部分 */
+
+/* 语言部分样式 */
+.language{
+    width: 100%;
+    height: 36px;
+    background-color: #1E1E1E;
+}
+
+/* 登录 注册 */
+.language>ulp{
+    float: left;
+    margin-left: 20px;
+    width: auto;
+    height: 30px; 
+}
+
+.language>ulp>li{
+    float: left;
+    list-style: none;
+    font-size: 20px;
+    color: white;
+    line-height: 35px;
+    margin-left: 10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.language>ulp li:nth-child(2){
+    transform: translate(10px);
+}
+
+.language>ulp>li>a:nth-of-type(1):hover{
+    color:#F5C518;
+}
+
+.language>ulp>li>a:nth-of-type(2):hover{
+    color:#F5C518;
+}
+
+/* 登录信息显示 */
+.language>ull{
+    float: left;
+    height: 30px;
+    margin-left: 60px;
+    background-color: #F5C518;
+}
+
+.language>ull>li{
+    list-style: none;
+    line-height: 30px;
+}
+
+.language>ull>li>.btn{
+    color:white;
+    font-size: 20px;
+    line-height: 30px;
+    background-color: #1E1E1E;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+/* 语言下的li标签 */
+
+.language>ul{
+    float: right;
+    margin-right: 10px;
+}
+
+.language>ul>li{
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-right: 25px;
+    list-style:none;
+    margin-top: 3px;
+}
+
+/* .language>ul>li:nth-of-type(1){
+    background: url(../images/tradition_chinese.png);
+} */
+
+.language>ul>li:nth-of-type(1):hover{
+    background: url(../images/tradition_chinese_hover.png);
+}
+
+/* .language>ul>li:nth-of-type(2){
+    background: url(../images/simplified_chinese.png);
+} */
+
+.language>ul>li:nth-of-type(2):hover{
+    background: url(../images/simplified_chinese_hover.png);
+}
+/* #endregion */
+
+/* #region 导航条 */
+/* 导航条样式 */
+.nav{
+    width: 100%;
+    height: 75px;
+    background-color:#F5C518;
+}
+
+/* 清楚a标签默认样式 */
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* 导航条部分 */
+
+.nav>ulp{
+    margin-left: 1000px;
+    
+}
+
+.nav>ulp>li{
+    width: 36px;
+    height: 75px;
+    float: left;
+    list-style: none;
+    margin-left: 40px;
+    margin-top: 0px;
+
+}
+
+.nav>ulp>li:nth-of-type(1){
+    background: url(../images/first1.png);
+}
+
+.nav>ulp>li:nth-of-type(2){
+    background: url(../images/first2.png);
+}
+
+.nav>ulp li:nth-child(2){
+    transform: translate(-20px);
+}
+
+.nav>ul{
+    margin-left: 500px;
+}
+
+.nav>ul>li{
+    height: 75px;
+    padding: 0 50px;
+    float: left;
+    list-style: none;
+}
+
+.nav>ul>li>a{
+    color: #000000;
+    line-height: 35px;
+    font-size: 45px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.nav>ul li:nth-child(1){
+    transform: translate(-260px);
+}
+
+.nav>ul>li>a:nth-of-type(1):hover{
+    color:#FFFFF9;
+}
+
+.nav>ul li:nth-child(2){
+    transform: translate(-145px);
+}
+
+.nav>ul>li>a:nth-of-type(2):hover{
+    color:#FFFFF9;
+}
+
+.nav>ul li:nth-child(3){
+    transform: translate(-30px);
+}
+
+.nav>ul>li>a:nth-of-type(3):hover{
+    color:#FFFFF9;
+}
+/* #endregion */
+
+/* #region 版心部分 */
+.banner{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+/* #region  第1部 */
+.banner>.c1{
+    list-style: none;
+    width: 100%;
+    height: 450px;
+    background-color: #2B2B2B;
+    
+}
+.banner>.c1>.left{
+    float: left;
+    width: 330px;
+    height: 450px;
+}
+.banner>.c1>.left>ul>li{
+    float: left;
+    list-style: none;
+    height: 450px;
+    width: 318px;
+}
+.banner>.c1>.left>ul>li:nth-of-type(1){
+    background: url(../images/waiting_1.png);
+}
+
+.banner>.c1>.right{
+    float: left;
+    width: 800px;
+    height: 450px;
+    margin-left: 60px;
+}
+.banner>.c1>.right>.title{
+    width: 600px;
+    height: 90px;
+    margin: 0 auto;
+}
+.banner>.c1>.right>.title>ul{
+    text-align:center;
+}
+.banner>.c1>.right>.title>ul>li{
+    list-style: none;
+    font-size: 50px;
+    line-height: 90px;
+    color: #FFFFFF;
+    display:inline;
+}
+
+.banner>.c1>.right>.person1{
+    width: 400px;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.banner>.c1>.right>.person2{
+    width: 400px;
+    height: 35px;
+    margin: 0 auto;
+}
+.banner>.c1>.right>.person1>ul{
+    text-align:center;
+}
+.banner>.c1>.right>.person1>ul>li{
+    list-style: none;
+    font-size: 15px;
+    line-height: 35px;
+    color: #FFFFFF;
+    
+}
+.banner>.c1>.right>.person2>ul{
+    text-align:center;
+}
+.banner>.c1>.right>.person2>ul>li{
+    list-style: none;
+    font-size: 15px;
+    line-height: 35px;
+    color: #FFFFFF;
+    
+}
+
+.banner>.c1>.right>.story{
+    width: 700px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.banner>.c1>.right>.story>ul>li{
+    list-style: none;
+    font-size: 26px;
+    color: #FFFFFF;
+    
+    text-indent: 60px;
+    line-height: 43px;
+}
+/* #endregion */
+
+/* #region 第2部 */
+.banner>.c2{
+    margin-top: 40px;
+    list-style: none;
+    width: 100%;
+    height: 450px;
+    background-color: #2B2B2B;
+}
+.banner>.c2>.left{
+    float: left;
+    width: 330px;
+    height: 450px;
+}
+.banner>.c2>.left>ul>li{
+    float: left;
+    list-style: none;
+    height: 450px;
+    width: 318px;
+}
+.banner>.c2>.left>ul>li:nth-of-type(1){
+    background: url(../images/waiting_2.png);
+}
+
+.banner>.c2>.right{
+    float: left;
+    width: 800px;
+    height: 450px;
+    margin-left: 60px;
+}
+.banner>.c2>.right>.title{
+    width: 600px;
+    height: 90px;
+    margin: 0 auto;
+}
+.banner>.c2>.right>.title>ul{
+    text-align:center;
+}
+.banner>.c2>.right>.title>ul>li{
+    list-style: none;
+    font-size: 50px;
+    line-height: 90px;
+    color: #FFFFFF;
+    display:inline;
+}
+
+.banner>.c2>.right>.person1{
+    width: 400px;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.banner>.c2>.right>.person2{
+    width: 410px;
+    height: 35px;
+    margin: 0 auto;
+}
+.banner>.c2>.right>.person1>ul{
+    text-align:center;
+}
+.banner>.c2>.right>.person1>ul>li{
+    list-style: none;
+    font-size: 15px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+.banner>.c2>.right>.person2>ul{
+    text-align:center;
+}
+.banner>.c2>.right>.person2>ul>li{
+    list-style: none;
+    font-size: 15px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.banner>.c2>.right>.story{
+    width: 700px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.banner>.c2>.right>.story>ul>li{
+    list-style: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-indent: 60px;
+    line-height: 35px;
+}
+/* #endregion */
+
+/* #region 第3部 */
+.banner>.c3{
+    margin-top: 40px;
+    list-style: none;
+    width: 100%;
+    height: 450px;
+    background-color: #2B2B2B;
+}
+.banner>.c3>.left{
+    float: left;
+    width: 330px;
+    height: 450px;
+}
+.banner>.c3>.left>ul>li{
+    float: left;
+    list-style: none;
+    height: 450px;
+    width: 318px;
+}
+.banner>.c3>.left>ul>li:nth-of-type(1){
+    background: url(../images/waiting_3.png);
+}
+
+.banner>.c3>.right{
+    float: left;
+    width: 800px;
+    height: 450px;
+    margin-left: 60px;
+}
+.banner>.c3>.right>.title{
+    width: 600px;
+    height: 90px;
+    margin: 0 auto;
+}
+.banner>.c3>.right>.title>ul{
+    text-align:center;
+}
+.banner>.c3>.right>.title>ul>li{
+    list-style: none;
+    font-size: 50px;
+    line-height: 90px;
+    color: #FFFFFF;
+    display:inline;
+}
+
+.banner>.c3>.right>.person1{
+    width: 400px;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.banner>.c3>.right>.person2{
+    width: 410px;
+    height: 35px;
+    margin: 0 auto;
+}
+.banner>.c3>.right>.person1>ul{
+    text-align:center;
+}
+.banner>.c3>.right>.person1>ul>li{
+    list-style: none;
+    font-size: 15px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+.banner>.c3>.right>.person2>ul{
+    text-align:center;
+}
+.banner>.c3>.right>.person2>ul>li{
+    list-style: none;
+    font-size: 15px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.banner>.c3>.right>.story{
+    width: 700px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.banner>.c3>.right>.story>ul>li{
+    list-style: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-indent: 60px;
+    line-height: 35px;
+}
+/* #endregion */
+ 
+/* #region 第4部 */
+.banner>.c4{
+    margin-top: 40px;
+    list-style: none;
+    width: 100%;
+    height: 450px;
+    background-color: #2B2B2B;
+}
+.banner>.c4>.left{
+    float: left;
+    width: 330px;
+    height: 450px;
+}
+.banner>.c4>.left>ul>li{
+    float: left;
+    list-style: none;
+    height: 450px;
+    width: 318px;
+}
+.banner>.c4>.left>ul>li:nth-of-type(1){
+    background: url(../images/waiting_4.png);
+}
+
+.banner>.c4>.right{
+    float: left;
+    width: 800px;
+    height: 450px;
+    margin-left: 60px;
+}
+.banner>.c4>.right>.title{
+    width: 600px;
+    height: 90px;
+    margin: 0 auto;
+}
+.banner>.c4>.right>.title>ul{
+    text-align:center;
+}
+.banner>.c4>.right>.title>ul>li{
+    list-style: none;
+    font-size: 50px;
+    line-height: 90px;
+    color: #FFFFFF;
+    display:inline;
+}
+
+.banner>.c4>.right>.person1{
+    width: 400px;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.banner>.c4>.right>.person2{
+    width: 410px;
+    height: 35px;
+    margin: 0 auto;
+}
+.banner>.c4>.right>.person1>ul{
+    text-align:center;
+}
+.banner>.c4>.right>.person1>ul>li{
+    list-style: none;
+    font-size: 15px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+.banner>.c4>.right>.person2>ul{
+    text-align:center;
+}
+.banner>.c4>.right>.person2>ul>li{
+    list-style: none;
+    font-size: 15px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.banner>.c4>.right>.story{
+    width: 700px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.banner>.c4>.right>.story>ul>li{
+    list-style: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-indent: 60px;
+    line-height: 35px;
+}
+/* #endregion */
+
+/* #region 第5部 */
+.banner>.c5{
+    margin-top: 40px;
+    list-style: none;
+    width: 100%;
+    height: 450px;
+    background-color: #2B2B2B;
+}
+.banner>.c5>.left{
+    float: left;
+    width: 330px;
+    height: 450px;
+}
+.banner>.c5>.left>ul>li{
+    float: left;
+    list-style: none;
+    height: 450px;
+    width: 318px;
+}
+.banner>.c5>.left>ul>li:nth-of-type(1){
+    background: url(../images/waiting_5.png);
+}
+
+.banner>.c5>.right{
+    float: left;
+    width: 800px;
+    height: 450px;
+    margin-left: 60px;
+}
+.banner>.c5>.right>.title{
+    width: 600px;
+    height: 90px;
+    margin: 0 auto;
+}
+.banner>.c5>.right>.title>ul{
+    text-align:center;
+}
+.banner>.c5>.right>.title>ul>li{
+    list-style: none;
+    font-size: 50px;
+    line-height: 90px;
+    color: #FFFFFF;
+    display:inline;
+}
+
+.banner>.c5>.right>.person1{
+    width: 400px;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.banner>.c5>.right>.person2{
+    width: 410px;
+    height: 35px;
+    margin: 0 auto;
+}
+.banner>.c5>.right>.person1>ul{
+    text-align:center;
+}
+.banner>.c5>.right>.person1>ul>li{
+    list-style: none;
+    font-size: 15px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+.banner>.c5>.right>.person2>ul{
+    text-align:center;
+}
+.banner>.c5>.right>.person2>ul>li{
+    list-style: none;
+    font-size: 15px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.banner>.c5>.right>.story{
+    width: 700px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.banner>.c5>.right>.story>ul>li{
+    list-style: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-indent: 60px;
+    line-height: 35px;
+}
+/* #endregion */
+
+/* #region 第6部 */
+.banner>.c6{
+    margin-top: 40px;
+    list-style: none;
+    width: 100%;
+    height: 450px;
+    background-color: #2B2B2B;
+}
+.banner>.c6>.left{
+    float: left;
+    width: 330px;
+    height: 450px;
+}
+.banner>.c6>.left>ul>li{
+    float: left;
+    list-style: none;
+    height: 450px;
+    width: 318px;
+}
+.banner>.c6>.left>ul>li:nth-of-type(1){
+    background: url(../images/waiting_6.png);
+}
+
+.banner>.c6>.right{
+    float: left;
+    width: 800px;
+    height: 450px;
+    margin-left: 60px;
+}
+.banner>.c6>.right>.title{
+    width: 600px;
+    height: 90px;
+    margin: 0 auto;
+}
+.banner>.c6>.right>.title>ul{
+    text-align:center;
+}
+.banner>.c6>.right>.title>ul>li{
+    list-style: none;
+    font-size: 50px;
+    line-height: 90px;
+    color: #FFFFFF;
+    display:inline;
+}
+
+.banner>.c6>.right>.person1{
+    width: 400px;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.banner>.c6>.right>.person2{
+    width: 410px;
+    height: 35px;
+    margin: 0 auto;
+}
+.banner>.c6>.right>.person1>ul{
+    text-align:center;
+}
+.banner>.c6>.right>.person1>ul>li{
+    list-style: none;
+    font-size: 15px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+.banner>.c6>.right>.person2>ul{
+    text-align:center;
+}
+.banner>.c6>.right>.person2>ul>li{
+    list-style: none;
+    font-size: 15px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.banner>.c6>.right>.story{
+    width: 700px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.banner>.c6>.right>.story>ul>li{
+    list-style: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-indent: 60px;
+    line-height: 35px;
+}
+/* #endregion */
+
+/* #region 第7部 */
+.banner>.c7{
+    margin-top: 40px;
+    list-style: none;
+    width: 100%;
+    height: 450px;
+    background-color: #2B2B2B;
+}
+.banner>.c7>.left{
+    float: left;
+    width: 330px;
+    height: 450px;
+
+}
+.banner>.c7>.left>ul>li{
+    float: left;
+    list-style: none;
+    height: 450px;
+    width: 318px;
+}
+.banner>.c7>.left>ul>li:nth-of-type(1){
+    background: url(../images/waiting_7.png);
+}
+
+.banner>.c7>.right{
+    float: left;
+    width: 800px;
+    height: 450px;
+    margin-left: 60px;
+}
+.banner>.c7>.right>.title{
+    width: 800px;
+    height: 90px;
+    margin: 0 auto;
+}
+.banner>.c7>.right>.title>ul{
+    text-align:center;
+}
+.banner>.c7>.right>.title>ul>li{
+    list-style: none;
+    font-size: 50px;
+    line-height: 90px;
+    color: #FFFFFF;
+    display:inline;
+}
+
+.banner>.c7>.right>.person1{
+    width: 400px;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.banner>.c7>.right>.person2{
+    width: 430px;
+    height: 35px;
+    margin: 0 auto;
+}
+.banner>.c7>.right>.person1>ul{
+    text-align:center;
+}
+.banner>.c7>.right>.person1>ul>li{
+    list-style: none;
+    font-size: 15px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+.banner>.c7>.right>.person2>ul{
+    text-align:center;
+}
+.banner>.c7>.right>.person2>ul>li{
+    list-style: none;
+    font-size: 15px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.banner>.c7>.right>.story{
+    width: 700px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.banner>.c7>.right>.story>ul>li{
+    list-style: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-indent: 60px;
+    line-height: 35px;
+}
+/* #endregion */
+
+/* #region 第8部 */
+.banner>.c8{
+    margin-top: 40px;
+    list-style: none;
+    width: 100%;
+    height: 450px;
+    background-color: #2B2B2B;
+}
+.banner>.c8>.left{
+    float: left;
+    width: 330px;
+    height: 450px;
+}
+.banner>.c8>.left>ul>li{
+    float: left;
+    list-style: none;
+    height: 450px;
+    width: 318px;
+}
+.banner>.c8>.left>ul>li:nth-of-type(1){
+    background: url(../images/waiting_8.png);
+}
+
+.banner>.c8>.right{
+    float: left;
+    width: 800px;
+    height: 450px;
+    margin-left: 60px;
+}
+.banner>.c8>.right>.title{
+    width: 600px;
+    height: 90px;
+    margin: 0 auto;
+}
+.banner>.c8>.right>.title>ul{
+    text-align:center;
+}
+.banner>.c8>.right>.title>ul>li{
+    list-style: none;
+    font-size: 50px;
+    line-height: 90px;
+    color: #FFFFFF;
+    display:inline;
+}
+
+.banner>.c8>.right>.person1{
+    width: 400px;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.banner>.c8>.right>.person2{
+    width: 430px;
+    height: 35px;
+    margin: 0 auto;
+}
+.banner>.c8>.right>.person1>ul{
+    text-align:center;
+}
+.banner>.c8>.right>.person1>ul>li{
+    list-style: none;
+    font-size: 15px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+.banner>.c8>.right>.person2>ul{
+    text-align:center;
+}
+.banner>.c8>.right>.person2>ul>li{
+    list-style: none;
+    font-size: 15px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.banner>.c8>.right>.story{
+    width: 750px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.banner>.c8>.right>.story>ul>li{
+    list-style: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-indent: 60px;
+    line-height: 35px;
+}
+/* #endregion */
+
+/* #region 第9部 */
+.banner>.c9{
+    margin-top: 40px;
+    list-style: none;
+    width: 100%;
+    height: 450px;
+    background-color: #2B2B2B;
+}
+.banner>.c9>.left{
+    float: left;
+    width: 330px;
+    height: 450px;
+}
+.banner>.c9>.left>ul>li{
+    float: left;
+    list-style: none;
+    height: 450px;
+    width: 303px;
+}
+.banner>.c9>.left>ul>li:nth-of-type(1){
+    background: url(../images/waiting_9.png);
+}
+
+.banner>.c9>.right{
+    float: left;
+    width: 800px;
+    height: 450px;
+    margin-left: 60px;
+}
+.banner>.c9>.right>.title{
+    width: 600px;
+    height: 90px;
+    margin: 0 auto;
+}
+.banner>.c9>.right>.title>ul{
+    text-align:center;
+}
+.banner>.c9>.right>.title>ul>li{
+    list-style: none;
+    font-size: 50px;
+    line-height: 90px;
+    color: #FFFFFF;
+    display:inline;
+}
+
+.banner>.c9>.right>.person1{
+    width: 400px;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.banner>.c9>.right>.person2{
+    width: 470px;
+    height: 35px;
+    margin: 0 auto;
+}
+.banner>.c9>.right>.person1>ul{
+    text-align:center;
+}
+.banner>.c9>.right>.person1>ul>li{
+    list-style: none;
+    font-size: 15px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+.banner>.c9>.right>.person2>ul{
+    text-align:center;
+}
+.banner>.c9>.right>.person2>ul>li{
+    list-style: none;
+    font-size: 15px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.banner>.c9>.right>.story{
+    width: 700px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.banner>.c9>.right>.story>ul>li{
+    list-style: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-indent: 60px;
+    line-height: 35px;
+}
+/* #endregion */
+
+/* #region 第10部 */
+.banner>.c10{
+    margin-top: 40px;
+    list-style: none;
+    width: 100%;
+    height: 450px;
+    background-color: #2B2B2B;
+}
+.banner>.c10>.left{
+    float: left;
+    width: 330px;
+    height: 450px;
+}
+.banner>.c10>.left>ul>li{
+    float: left;
+    list-style: none;
+    height: 450px;
+    width: 318px;
+}
+.banner>.c10>.left>ul>li:nth-of-type(1){
+    background: url(../images/waiting_10.png);
+}
+
+.banner>.c10>.right{
+    float: left;
+    width: 800px;
+    height: 450px;
+    margin-left: 60px;
+}
+.banner>.c10>.right>.title{
+    width: 600px;
+    height: 90px;
+    margin: 0 auto;
+}
+.banner>.c10>.right>.title>ul{
+    text-align:center;
+}
+.banner>.c10>.right>.title>ul>li{
+    list-style: none;
+    font-size: 50px;
+    line-height: 90px;
+    color: #FFFFFF;
+    display:inline;
+}
+
+.banner>.c10>.right>.person1{
+    width: 400px;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.banner>.c10>.right>.person2{
+    width: 410px;
+    height: 35px;
+    margin: 0 auto;
+}
+.banner>.c10>.right>.person1>ul{
+    text-align:center;
+}
+.banner>.c10>.right>.person1>ul>li{
+    list-style: none;
+    font-size: 15px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+.banner>.c10>.right>.person2>ul{
+    text-align:center;
+}
+.banner>.c10>.right>.person2>ul>li{
+    list-style: none;
+    font-size: 15px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.banner>.c10>.right>.story{
+    width: 700px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+.banner>.c10>.right>.story>ul>li{
+    list-style: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-indent: 60px;
+    line-height: 35px;
+}
+/* #endregion */
+
+
+
+/* #endregion */
+
+/* #region 底部 */
+.bottom{
+    margin-top: 120px;
+    width: 100%;
+    height: 170px;
+    background-color: #3B3B3B;
+}
+
+.bottom>ul{
+    margin-right: 100px;
+}
+
+.bottom>ul li:nth-child(1){
+    height: 200px;
+    width: 96px;
+    float: left;
+    list-style: none;
+    margin-top: -60px;
+    transform: translate(1220px);
+}
+
+.bottom>ul li:nth-child(2){
+    height: 200px;
+    width: 95px;
+    float: left;
+    list-style: none;
+    margin-top: -60px;
+    transform: translate(1250px);
+}
+
+.bottom>ul>li:nth-of-type(1){
+    background: url(../images/bottomfirst_1.png);
+}
+
+.bottom>ul>li:nth-of-type(2){
+    background: url(../images/bottomfirst_2.png);
+}
+/* #endregion */
